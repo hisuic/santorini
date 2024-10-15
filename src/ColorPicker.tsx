@@ -1,11 +1,10 @@
-import React from 'react'
 import { useState } from 'react'
 
 const ColorPicker = () => {
 
   const [color, setColor] = useState("#FFFFFF");
 
-  function handleColorChange(event) {
+  function handleColorChange(event:String) {
     setColor(event.target.value);
   }
 
