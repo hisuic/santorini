@@ -4,7 +4,7 @@ const ColorPicker = () => {
 
   const [color, setColor] = useState("#FFFFFF");
 
-  function handleColorChange(event:String) {
+  function handleColorChange(event:Color) {
     setColor(event.target.value);
   }
 
