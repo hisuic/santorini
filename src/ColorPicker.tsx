@@ -4,7 +4,7 @@ const ColorPicker = () => {
 
   const [color, setColor] = useState("#FFFFFF");
 
-  function handleColorChange(event:Color) {
+  function handleColorChange(event:React.ChangeEvent<HTMLInputElement>) {
     setColor(event.target.value);
   }
 
