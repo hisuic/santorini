@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ColorPicker from './ColorPicker.tsx';
 
 // EyeDropper API の型を宣言
 declare global {
@@ -8,7 +9,7 @@ declare global {
 }
 
 const Eyedropper: React.FC = () => {
-  const [color, setColor] = useState<string | null>(null);
+  const [color, setColor] = useState<string>("#FFFFFF");
 
   const handlePickColor = async () => {
     if (!('EyeDropper' in window)) {
@@ -26,21 +27,13 @@ const Eyedropper: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="color-picker-container">
+      <h1>Color Picker</h1>
+      <div className="color-display" style={{backgroundColor: color}}>
+        <p>Selected Color: {color}</p>
+      </div>
+      <label>Select a Color:</label>
       <button onClick={handlePickColor}>Pick Color</button>
-      {color && (
-        <div>
-          <p>Selected Color: {color}</p>
-          <div
-            style={{
-              width: '50px',
-              height: '50px',
-              backgroundColor: color,
-              border: '1px solid #000',
-            }}
-          />
-        </div>
-      )}
     </div>
   );
 };
