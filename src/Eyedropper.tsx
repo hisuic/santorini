@@ -7,7 +7,7 @@ declare global {
   }
 }
 
-const ColorPicker: React.FC = () => {
+const Eyedropper: React.FC = () => {
   const [color, setColor] = useState<string | null>(null);
 
   const handlePickColor = async () => {
@@ -45,5 +45,5 @@ const ColorPicker: React.FC = () => {
   );
 };
 
-export default ColorPicker;
+export default Eyedropper;
 
