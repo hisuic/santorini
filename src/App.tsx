@@ -5,7 +5,6 @@ import Eyedropper from './Eyedropper.tsx'
 function App() {
   return (
     <>
-      <ColorPicker />
       <Eyedropper />
     </>
   )
