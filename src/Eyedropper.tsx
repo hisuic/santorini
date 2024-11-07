@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ColorPicker from './ColorPicker.tsx';
 
 declare global {
   interface Window {
