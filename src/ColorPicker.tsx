@@ -5,10 +5,7 @@ interface ColorPickerProps {
   setColor : React.Dispatch<React.SetStateAction<string>>;
 }
 
-// const ColorPicker = () => {
 const ColorPicker: React.FC<ColorPickerProps> = ({color, setColor}) => {
-
-  // const [color, setColor] = useState("#FFFFFF");
 
   function handleColorChange(event:React.ChangeEvent<HTMLInputElement>) {
     setColor(event.target.value);

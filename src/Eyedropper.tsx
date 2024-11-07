@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ColorPicker from './ColorPicker.tsx';
 
-// EyeDropper API の型を宣言
 declare global {
   interface Window {
     EyeDropper: any;
