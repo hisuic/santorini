@@ -1,8 +1,9 @@
-import { useState } from 'react'
+interface ColorPickerProps {
+  color : string;
+  setColor : React.Dispatch<React.SetStateAction<string>>;
+}
 
-const ColorPicker = () => {
-
-  const [color, setColor] = useState("#FFFFFF");
+const ColorPicker: React.FC<ColorPickerProps> = ({color, setColor}) => {
 
   function handleColorChange(event:React.ChangeEvent<HTMLInputElement>) {
     setColor(event.target.value);
