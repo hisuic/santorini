@@ -2,7 +2,7 @@
 <div align="center">
   <p>
     <a href="https://santorini-three.vercel.app/" target="_blank">
-      <img width="100%" src="https://github.com/user-attachments/assets/2f397666-f752-452f-a10a-26c640c0de73" alt="Santorini banner"></a>
+      <img width="80%" src="https://github.com/user-attachments/assets/2f397666-f752-452f-a10a-26c640c0de73" alt="Santorini banner"></a>
   </p>
 </div>
 
