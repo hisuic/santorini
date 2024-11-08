@@ -30,7 +30,6 @@ const Eyedropper: React.FC = () => {
       <div className="color-display" style={{backgroundColor: color}}>
         <p>Selected Color: {color}</p>
       </div>
-      <label>Select a Color:</label>
       <button onClick={handlePickColor}>Pick Color</button>
     </div>
   );
