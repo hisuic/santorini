@@ -62,9 +62,9 @@ button:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid hsl(0, 0%, 80%);
-  border-radius: 25px;
-  margin-bottom: 25px;
+  border: 2px solid hsl(0, 0%, 80%);
+  border-radius: 15px;
+  margin-bottom: 40px;
   transition: 0.25s ease;
 }
 
