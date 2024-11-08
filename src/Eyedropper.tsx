@@ -26,7 +26,7 @@ const Eyedropper: React.FC = () => {
 
   return (
     <div className="color-picker-container">
-      <h1>Color Picker</h1>
+      <h1>Santorini</h1>
       <div className="color-display" style={{backgroundColor: color}}>
         <p>Selected Color: {color}</p>
       </div>
